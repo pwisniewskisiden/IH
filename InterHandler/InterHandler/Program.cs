@@ -9,7 +9,7 @@ using BusinessLogic;
 using DAL.IOFile;
 using BusinessLogic.Jobs;
 using DAL.FTP;
-using System.Net;
+using System.Net; 
 using Quartz;
 using Quartz.Impl;
 using BusinessLogic.SyncronXL;
