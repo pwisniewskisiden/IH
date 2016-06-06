@@ -1,0 +1,8 @@
+System.InvalidOperationException: No connection string named 'CDNXL' could be found in the application config file.
+   w System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   w System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   w System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   w System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   w DAL.CDNXL.Siden_Transactional_Demand() w C:\Projects\InterHandler\InterHandler\DAL\RecivedXL.Context.cs:wiersz 46
+   w BusinessLogic.SyncronXL.SyncXL.GetFromXL[T]() w C:\Projects\InterHandler\InterHandler\DAL\SyncronXL\SyncXL.cs:wiersz 51
+   w InterHandler.Jobs.SendingJob.Execute[StringModel,DBModel](IJobExecutionContext context) w C:\Projects\InterHandler\InterHandler\InterHandler\Jobs\SendingJob.cs:wiersz 30

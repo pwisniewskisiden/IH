@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CDNXL_MTLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="Siden_Dealer_Parts_Master" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="CDN">
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="ItemCode" Type="varchar" MaxLength="40" />
+                <Property Name="WarehouseCode" Type="varchar" MaxLength="10" />
+                <Property Name="WarehouseGroupCode" Type="varchar" MaxLength="10" />
+                <Property Name="ExtractionDate" Type="datetime" Nullable="false" />
+                <Property Name="Description" Type="varchar" MaxLength="255" />
+                <Property Name="MasterItemCode" Type="varchar" MaxLength="40" />
+                <Property Name="PreferredSupplierCode" Type="varchar" MaxLength="50" />
+                <Property Name="ActivationDate" Type="date" />
+                <Property Name="UnitCost" Type="decimal" Precision="14" Scale="2" />
+                <Property Name="UnitCostCurrency" Type="varchar" MaxLength="3" Nullable="false" />
+                <Property Name="BuyerCode" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="Weight" Type="decimal" Precision="9" Scale="3" />
+                <Property Name="WeightUnitOfMeasure" Type="varchar" MaxLength="5" />
+                <Property Name="Volume" Type="int" Nullable="false" />
+                <Property Name="VolumeUnitOfMeasure" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="UnitOfMeasure" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="PackSize" Type="int" Nullable="false" />
+                <Property Name="Active" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="SetQuantity" Type="int" Nullable="false" />
+                <Property Name="LeadTime" Type="int" Nullable="false" />
+                <Property Name="MinimumOrderQty" Type="int" Nullable="false" />
+                <Property Name="MultipleOrderQty" Type="int" Nullable="false" />
+                <Property Name="PurchasePrice" Type="decimal" Precision="15" Scale="4" />
+                <Property Name="PurchasePriceCurrency" Type="varchar" MaxLength="3" Nullable="false" />
+                <Property Name="CurrentStock" Type="int" />
+                <Property Name="OutstandingOrderQuantity" Type="int" Nullable="false" />
+                <Property Name="TotalBackOrders" Type="int" Nullable="false" />
+                <Property Name="InTransitStock" Type="int" Nullable="false" />
+                <Property Name="ReservedStock" Type="int" Nullable="false" />
+                <Property Name="ReplacedItemCode" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="InheritStock" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="ReplacementMultiplier" Type="int" Nullable="false" />
+                <Property Name="BulkOrderQuantity1" Type="int" Nullable="false" />
+                <Property Name="BulkOrderQuantity2" Type="int" Nullable="false" />
+                <Property Name="twr_gidnumer" Type="int" Nullable="false" />
+                <Property Name="MAG_GIDNumer" Type="int" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="Siden_Open_Purchase_Orders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="CDN">
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="RowTransactionType" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="ItemCode" Type="varchar" MaxLength="40" />
+                <Property Name="WarehouseCode" Type="varchar" MaxLength="10" Nullable="false" />
+                <Property Name="WarehouseGroupCode" Type="varchar" MaxLength="10" Nullable="false" />
+                <Property Name="OrderNumber" Type="varchar" MaxLength="1024" />
+                <Property Name="OrderLineNumber" Type="smallint" Nullable="false" />
+                <Property Name="ExtractionDate" Type="datetime" Nullable="false" />
+                <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+                <Property Name="OrderQuantity" Type="int" />
+                <Property Name="OrderDate" Type="datetime" />
+                <Property Name="RequestedDate" Type="datetime" />
+                <Property Name="ReceivedQuantity" Type="decimal" Precision="38" Scale="4" />
+                <Property Name="ReceivedDate" Type="datetime" />
+                <Property Name="FreeText1" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="FreeText2" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="FreeText3" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="FreeText4" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="FreeText5" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="ZaN_LastMod" Type="datetime" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="Siden_Transactional_Demand" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="CDN">
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="RowTransactionType" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="ItemCode" Type="varchar" MaxLength="40" />
+                <Property Name="WarehouseCode" Type="varchar" MaxLength="10" Nullable="false" />
+                <Property Name="WarehouseGroupCode" Type="varchar" MaxLength="10" Nullable="false" />
+                <Property Name="SalesOrderNumber" Type="varchar" MaxLength="1024" />
+                <Property Name="SalesOrderLineNumber" Type="smallint" Nullable="false" />
+                <Property Name="ExtractionDate" Type="datetime" Nullable="false" />
+                <Property Name="OrderedRequestedQuantity" Type="decimal" Precision="11" Scale="4" />
+                <Property Name="DeliveredSuppliedQuantity" Type="decimal" Precision="38" Scale="4" />
+                <Property Name="DemandDate" Type="datetime" />
+                <Property Name="CustomerCode" Type="varchar" MaxLength="50" />
+                <Property Name="UseForForecasting" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="UseForServiceLevel" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="UseForClassification" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="StockAtDemandDate" Type="int" Nullable="false" />
+                <Property Name="FreeText1" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="FreeText2" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="FreeText3" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="FreeText4" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="FreeText5" Type="varchar" MaxLength="1" Nullable="false" />
+                <Property Name="ZaN_LastMod" Type="datetime" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <EntityContainer Name="CDNXL_MTLModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CDNXL_MTLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <ComplexType Name="Siden_Dealer_Parts_Master_Result">
+          <Property Name="ItemCode" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="WarehouseCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="WarehouseGroupCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ExtractionDate" Type="DateTime" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="MasterItemCode" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="PreferredSupplierCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ActivationDate" Type="DateTime" />
+          <Property Name="UnitCost" Type="Decimal" Precision="14" Scale="2" />
+          <Property Name="UnitCostCurrency" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BuyerCode" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Weight" Type="Decimal" Precision="9" Scale="3" />
+          <Property Name="WeightUnitOfMeasure" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Volume" Type="Int32" Nullable="false" />
+          <Property Name="VolumeUnitOfMeasure" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UnitOfMeasure" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PackSize" Type="Int32" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SetQuantity" Type="Int32" Nullable="false" />
+          <Property Name="LeadTime" Type="Int32" Nullable="false" />
+          <Property Name="MinimumOrderQty" Type="Int32" Nullable="false" />
+          <Property Name="MultipleOrderQty" Type="Int32" Nullable="false" />
+          <Property Name="PurchasePrice" Type="Decimal" Precision="15" Scale="4" />
+          <Property Name="PurchasePriceCurrency" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CurrentStock" Type="Int32" />
+          <Property Name="OutstandingOrderQuantity" Type="Int32" Nullable="false" />
+          <Property Name="TotalBackOrders" Type="Int32" Nullable="false" />
+          <Property Name="InTransitStock" Type="Int32" Nullable="false" />
+          <Property Name="ReservedStock" Type="Int32" Nullable="false" />
+          <Property Name="ReplacedItemCode" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="InheritStock" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ReplacementMultiplier" Type="Int32" Nullable="false" />
+          <Property Name="BulkOrderQuantity1" Type="Int32" Nullable="false" />
+          <Property Name="BulkOrderQuantity2" Type="Int32" Nullable="false" />
+          <Property Name="twr_gidnumer" Type="Int32" Nullable="false" />
+          <Property Name="MAG_GIDNumer" Type="Int32" />
+        </ComplexType>
+        <ComplexType Name="Siden_Open_Purchase_Orders_Result">
+          <Property Name="RowTransactionType" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ItemCode" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="WarehouseCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="WarehouseGroupCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OrderNumber" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Name="OrderLineNumber" Type="Int16" Nullable="false" />
+          <Property Name="ExtractionDate" Type="DateTime" Nullable="false" />
+          <Property Name="SupplierCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OrderQuantity" Type="Int32" />
+          <Property Name="OrderDate" Type="DateTime" />
+          <Property Name="RequestedDate" Type="DateTime" />
+          <Property Name="ReceivedQuantity" Type="Decimal" Precision="38" Scale="4" />
+          <Property Name="ReceivedDate" Type="DateTime" />
+          <Property Name="FreeText1" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FreeText2" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FreeText3" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FreeText4" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FreeText5" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ZaN_LastMod" Type="DateTime" />
+        </ComplexType>
+        <ComplexType Name="Siden_Transactional_Demand_Result">
+          <Property Name="RowTransactionType" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ItemCode" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="WarehouseCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="WarehouseGroupCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SalesOrderNumber" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Name="SalesOrderLineNumber" Type="Int16" Nullable="false" />
+          <Property Name="ExtractionDate" Type="DateTime" Nullable="false" />
+          <Property Name="OrderedRequestedQuantity" Type="Decimal" Precision="11" Scale="4" />
+          <Property Name="DeliveredSuppliedQuantity" Type="Decimal" Precision="38" Scale="4" />
+          <Property Name="DemandDate" Type="DateTime" />
+          <Property Name="CustomerCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UseForForecasting" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UseForServiceLevel" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UseForClassification" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StockAtDemandDate" Type="Int32" Nullable="false" />
+          <Property Name="FreeText1" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FreeText2" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FreeText3" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FreeText4" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FreeText5" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ZaN_LastMod" Type="DateTime" />
+        </ComplexType>
+        <EntityContainer Name="CDNXL" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="Siden_Dealer_Parts_Master" IsComposable="true" ReturnType="Collection(CDNXL_MTLModel.Siden_Dealer_Parts_Master_Result)" />
+          <FunctionImport Name="Siden_Open_Purchase_Orders" IsComposable="true" ReturnType="Collection(CDNXL_MTLModel.Siden_Open_Purchase_Orders_Result)" />
+          <FunctionImport Name="Siden_Transactional_Demand" IsComposable="true" ReturnType="Collection(CDNXL_MTLModel.Siden_Transactional_Demand_Result)" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CDNXL_MTLModelStoreContainer" CdmEntityContainer="CDNXL">
+          <FunctionImportMapping FunctionName="CDNXL_MTLModel.Store.Siden_Dealer_Parts_Master" FunctionImportName="Siden_Dealer_Parts_Master">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CDNXL_MTLModel.Siden_Dealer_Parts_Master_Result">
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="WarehouseCode" ColumnName="WarehouseCode" />
+                <ScalarProperty Name="WarehouseGroupCode" ColumnName="WarehouseGroupCode" />
+                <ScalarProperty Name="ExtractionDate" ColumnName="ExtractionDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="MasterItemCode" ColumnName="MasterItemCode" />
+                <ScalarProperty Name="PreferredSupplierCode" ColumnName="PreferredSupplierCode" />
+                <ScalarProperty Name="ActivationDate" ColumnName="ActivationDate" />
+                <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+                <ScalarProperty Name="UnitCostCurrency" ColumnName="UnitCostCurrency" />
+                <ScalarProperty Name="BuyerCode" ColumnName="BuyerCode" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="WeightUnitOfMeasure" ColumnName="WeightUnitOfMeasure" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="VolumeUnitOfMeasure" ColumnName="VolumeUnitOfMeasure" />
+                <ScalarProperty Name="UnitOfMeasure" ColumnName="UnitOfMeasure" />
+                <ScalarProperty Name="PackSize" ColumnName="PackSize" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="SetQuantity" ColumnName="SetQuantity" />
+                <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+                <ScalarProperty Name="MinimumOrderQty" ColumnName="MinimumOrderQty" />
+                <ScalarProperty Name="MultipleOrderQty" ColumnName="MultipleOrderQty" />
+                <ScalarProperty Name="PurchasePrice" ColumnName="PurchasePrice" />
+                <ScalarProperty Name="PurchasePriceCurrency" ColumnName="PurchasePriceCurrency" />
+                <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+                <ScalarProperty Name="OutstandingOrderQuantity" ColumnName="OutstandingOrderQuantity" />
+                <ScalarProperty Name="TotalBackOrders" ColumnName="TotalBackOrders" />
+                <ScalarProperty Name="InTransitStock" ColumnName="InTransitStock" />
+                <ScalarProperty Name="ReservedStock" ColumnName="ReservedStock" />
+                <ScalarProperty Name="ReplacedItemCode" ColumnName="ReplacedItemCode" />
+                <ScalarProperty Name="InheritStock" ColumnName="InheritStock" />
+                <ScalarProperty Name="ReplacementMultiplier" ColumnName="ReplacementMultiplier" />
+                <ScalarProperty Name="BulkOrderQuantity1" ColumnName="BulkOrderQuantity1" />
+                <ScalarProperty Name="BulkOrderQuantity2" ColumnName="BulkOrderQuantity2" />
+                <ScalarProperty Name="twr_gidnumer" ColumnName="twr_gidnumer" />
+                <ScalarProperty Name="MAG_GIDNumer" ColumnName="MAG_GIDNumer" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionName="CDNXL_MTLModel.Store.Siden_Open_Purchase_Orders" FunctionImportName="Siden_Open_Purchase_Orders">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CDNXL_MTLModel.Siden_Open_Purchase_Orders_Result">
+                <ScalarProperty Name="RowTransactionType" ColumnName="RowTransactionType" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="WarehouseCode" ColumnName="WarehouseCode" />
+                <ScalarProperty Name="WarehouseGroupCode" ColumnName="WarehouseGroupCode" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="OrderLineNumber" ColumnName="OrderLineNumber" />
+                <ScalarProperty Name="ExtractionDate" ColumnName="ExtractionDate" />
+                <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+                <ScalarProperty Name="OrderQuantity" ColumnName="OrderQuantity" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="RequestedDate" ColumnName="RequestedDate" />
+                <ScalarProperty Name="ReceivedQuantity" ColumnName="ReceivedQuantity" />
+                <ScalarProperty Name="ReceivedDate" ColumnName="ReceivedDate" />
+                <ScalarProperty Name="FreeText1" ColumnName="FreeText1" />
+                <ScalarProperty Name="FreeText2" ColumnName="FreeText2" />
+                <ScalarProperty Name="FreeText3" ColumnName="FreeText3" />
+                <ScalarProperty Name="FreeText4" ColumnName="FreeText4" />
+                <ScalarProperty Name="FreeText5" ColumnName="FreeText5" />
+                <ScalarProperty Name="ZaN_LastMod" ColumnName="ZaN_LastMod" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionName="CDNXL_MTLModel.Store.Siden_Transactional_Demand" FunctionImportName="Siden_Transactional_Demand">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CDNXL_MTLModel.Siden_Transactional_Demand_Result">
+                <ScalarProperty Name="RowTransactionType" ColumnName="RowTransactionType" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="WarehouseCode" ColumnName="WarehouseCode" />
+                <ScalarProperty Name="WarehouseGroupCode" ColumnName="WarehouseGroupCode" />
+                <ScalarProperty Name="SalesOrderNumber" ColumnName="SalesOrderNumber" />
+                <ScalarProperty Name="SalesOrderLineNumber" ColumnName="SalesOrderLineNumber" />
+                <ScalarProperty Name="ExtractionDate" ColumnName="ExtractionDate" />
+                <ScalarProperty Name="OrderedRequestedQuantity" ColumnName="OrderedRequestedQuantity" />
+                <ScalarProperty Name="DeliveredSuppliedQuantity" ColumnName="DeliveredSuppliedQuantity" />
+                <ScalarProperty Name="DemandDate" ColumnName="DemandDate" />
+                <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+                <ScalarProperty Name="UseForForecasting" ColumnName="UseForForecasting" />
+                <ScalarProperty Name="UseForServiceLevel" ColumnName="UseForServiceLevel" />
+                <ScalarProperty Name="UseForClassification" ColumnName="UseForClassification" />
+                <ScalarProperty Name="StockAtDemandDate" ColumnName="StockAtDemandDate" />
+                <ScalarProperty Name="FreeText1" ColumnName="FreeText1" />
+                <ScalarProperty Name="FreeText2" ColumnName="FreeText2" />
+                <ScalarProperty Name="FreeText3" ColumnName="FreeText3" />
+                <ScalarProperty Name="FreeText4" ColumnName="FreeText4" />
+                <ScalarProperty Name="FreeText5" ColumnName="FreeText5" />
+                <ScalarProperty Name="ZaN_LastMod" ColumnName="ZaN_LastMod" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

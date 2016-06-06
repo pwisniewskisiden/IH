@@ -1,0 +1,12 @@
+ArxOne.Ftp.Exceptions.FtpProtocolException: Expected other reply than 505 ('Command was blocked. Contact admin.')
+   w ArxOne.Ftp.FtpSession.ThrowException(FtpReply reply)
+   w ArxOne.Ftp.FtpSession.Expect(FtpReply reply, Int32[] codes)
+   w ArxOne.Ftp.FtpSession.OpenPassiveDataStream(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.OpenDataStream(Boolean passive, TimeSpan connectTimeout, TimeSpan readWriteTimeout, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.OpenDataStream(FtpSession session, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.ProcessStor(FtpSession session, FtpPath path, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.<>c__DisplayClass9_0.<Stor>b__0(FtpSession handle)
+   w ArxOne.Ftp.FtpClient.Process[TResult](Func`2 action, FtpSession session)
+   w ArxOne.Ftp.FtpClientUtility.Stor(FtpClient ftpClient, FtpPath path, FtpTransferMode mode)
+   w DAL.FTP.FTP.Send(String inLocal, String outFTP, String regex) w C:\Projects\InterHandler\InterHandler\DAL\FTP\FTP.cs:wiersz 84
+   w InterHandler.Jobs.SendingJob.Execute[StringModel,DBModel](IJobExecutionContext context) w C:\Projects\InterHandler\InterHandler\InterHandler\Jobs\SendingJob.cs:wiersz 63

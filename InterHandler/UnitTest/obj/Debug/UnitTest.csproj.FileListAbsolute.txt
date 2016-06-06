@@ -1,0 +1,14 @@
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\UnitTest.dll
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\UnitTest.pdb
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\DAL.dll
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\EntityFramework.dll
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\AutoMapper.dll
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\ArxOne.Ftp.dll
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\DAL.pdb
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\EntityFramework.xml
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\AutoMapper.xml
+C:\Projects\InterHandler\InterHandler\UnitTest\bin\Debug\ArxOne.Ftp.xml
+C:\Projects\InterHandler\InterHandler\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Projects\InterHandler\InterHandler\UnitTest\obj\Debug\UnitTest.dll
+C:\Projects\InterHandler\InterHandler\UnitTest\obj\Debug\UnitTest.pdb

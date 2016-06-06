@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CDNXL_MTLModelStoreContainer" CdmEntityContainer="CDNXL_MTLEntities">
+    <FunctionImportMapping FunctionName="CDNXL_MTLModel.Store.Siden_Dealer_Parts_Master" FunctionImportName="Siden_Dealer_Parts_Master">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CDNXL_MTLModel.Siden_Dealer_Parts_Master_Result">
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="WarehouseCode" ColumnName="WarehouseCode" />
+          <ScalarProperty Name="WarehouseGroupCode" ColumnName="WarehouseGroupCode" />
+          <ScalarProperty Name="ExtractionDate" ColumnName="ExtractionDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MasterItemCode" ColumnName="MasterItemCode" />
+          <ScalarProperty Name="PreferredSupplierCode" ColumnName="PreferredSupplierCode" />
+          <ScalarProperty Name="ActivationDate" ColumnName="ActivationDate" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="UnitCostCurrency" ColumnName="UnitCostCurrency" />
+          <ScalarProperty Name="BuyerCode" ColumnName="BuyerCode" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="WeightUnitOfMeasure" ColumnName="WeightUnitOfMeasure" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="VolumeUnitOfMeasure" ColumnName="VolumeUnitOfMeasure" />
+          <ScalarProperty Name="UnitOfMeasure" ColumnName="UnitOfMeasure" />
+          <ScalarProperty Name="PackSize" ColumnName="PackSize" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="SetQuantity" ColumnName="SetQuantity" />
+          <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+          <ScalarProperty Name="MinimumOrderQty" ColumnName="MinimumOrderQty" />
+          <ScalarProperty Name="MultipleOrderQty" ColumnName="MultipleOrderQty" />
+          <ScalarProperty Name="PurchasePrice" ColumnName="PurchasePrice" />
+          <ScalarProperty Name="PurchasePriceCurrency" ColumnName="PurchasePriceCurrency" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+          <ScalarProperty Name="OutstandingOrderQuantity" ColumnName="OutstandingOrderQuantity" />
+          <ScalarProperty Name="TotalBackOrders" ColumnName="TotalBackOrders" />
+          <ScalarProperty Name="InTransitStock" ColumnName="InTransitStock" />
+          <ScalarProperty Name="ReservedStock" ColumnName="ReservedStock" />
+          <ScalarProperty Name="ReplacedItemCode" ColumnName="ReplacedItemCode" />
+          <ScalarProperty Name="InheritStock" ColumnName="InheritStock" />
+          <ScalarProperty Name="ReplacementMultiplier" ColumnName="ReplacementMultiplier" />
+          <ScalarProperty Name="BulkOrderQuantity1" ColumnName="BulkOrderQuantity1" />
+          <ScalarProperty Name="BulkOrderQuantity2" ColumnName="BulkOrderQuantity2" />
+          <ScalarProperty Name="twr_gidnumer" ColumnName="twr_gidnumer" />
+          <ScalarProperty Name="MAG_GIDNumer" ColumnName="MAG_GIDNumer" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Siden_Transactional_Demand" FunctionName="CDNXL_MTLModel.Store.Siden_Transactional_Demand">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CDNXL_MTLModel.Siden_Transactional_Demand_Result">
+          <ScalarProperty Name="RowTransactionType" ColumnName="RowTransactionType" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="WarehouseCode" ColumnName="WarehouseCode" />
+          <ScalarProperty Name="WarehouseGroupCode" ColumnName="WarehouseGroupCode" />
+          <ScalarProperty Name="SalesOrderNumber" ColumnName="SalesOrderNumber" />
+          <ScalarProperty Name="SalesOrderLineNumber" ColumnName="SalesOrderLineNumber" />
+          <ScalarProperty Name="ExtractionDate" ColumnName="ExtractionDate" />
+          <ScalarProperty Name="OrderedRequestedQuantity" ColumnName="OrderedRequestedQuantity" />
+          <ScalarProperty Name="DeliveredSuppliedQuantity" ColumnName="DeliveredSuppliedQuantity" />
+          <ScalarProperty Name="DemandDate" ColumnName="DemandDate" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="UseForForecasting" ColumnName="UseForForecasting" />
+          <ScalarProperty Name="UseForServiceLevel" ColumnName="UseForServiceLevel" />
+          <ScalarProperty Name="UseForClassification" ColumnName="UseForClassification" />
+          <ScalarProperty Name="StockAtDemandDate" ColumnName="StockAtDemandDate" />
+          <ScalarProperty Name="FreeText1" ColumnName="FreeText1" />
+          <ScalarProperty Name="FreeText2" ColumnName="FreeText2" />
+          <ScalarProperty Name="FreeText3" ColumnName="FreeText3" />
+          <ScalarProperty Name="FreeText4" ColumnName="FreeText4" />
+          <ScalarProperty Name="FreeText5" ColumnName="FreeText5" />
+          <ScalarProperty Name="ZaN_LastMod" ColumnName="ZaN_LastMod" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

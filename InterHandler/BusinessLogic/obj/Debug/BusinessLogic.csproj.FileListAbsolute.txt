@@ -1,0 +1,15 @@
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Projects\InterHandler\InterHandler\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Projects\InterHandler\InterHandler\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\ArxOne.Ftp.dll
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\ArxOne.Ftp.xml
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\Common.Logging.Core.dll
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\Common.Logging.dll
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\Quartz.dll
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\Common.Logging.pdb
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\Common.Logging.xml
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\Common.Logging.Core.pdb
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\Common.Logging.Core.xml
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\Quartz.pdb
+C:\Projects\InterHandler\InterHandler\BusinessLogic\bin\Debug\Quartz.xml

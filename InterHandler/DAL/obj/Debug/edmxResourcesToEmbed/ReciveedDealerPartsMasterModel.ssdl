@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CDNXL_MTLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="Siden_Dealer_Parts_Master" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="CDN">
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="ItemCode" Type="varchar" MaxLength="40" />
+          <Property Name="WarehouseCode" Type="varchar" MaxLength="10" />
+          <Property Name="WarehouseGroupCode" Type="varchar" MaxLength="10" />
+          <Property Name="ExtractionDate" Type="datetime" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="255" />
+          <Property Name="MasterItemCode" Type="varchar" MaxLength="40" />
+          <Property Name="PreferredSupplierCode" Type="varchar" MaxLength="50" />
+          <Property Name="ActivationDate" Type="date" />
+          <Property Name="UnitCost" Type="decimal" Precision="14" Scale="2" />
+          <Property Name="UnitCostCurrency" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="BuyerCode" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="Weight" Type="decimal" Precision="9" Scale="3" />
+          <Property Name="WeightUnitOfMeasure" Type="varchar" MaxLength="5" />
+          <Property Name="Volume" Type="int" Nullable="false" />
+          <Property Name="VolumeUnitOfMeasure" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="UnitOfMeasure" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="PackSize" Type="int" Nullable="false" />
+          <Property Name="Active" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="SetQuantity" Type="int" Nullable="false" />
+          <Property Name="LeadTime" Type="int" Nullable="false" />
+          <Property Name="MinimumOrderQty" Type="int" Nullable="false" />
+          <Property Name="MultipleOrderQty" Type="int" Nullable="false" />
+          <Property Name="PurchasePrice" Type="decimal" Precision="15" Scale="4" />
+          <Property Name="PurchasePriceCurrency" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="CurrentStock" Type="int" />
+          <Property Name="OutstandingOrderQuantity" Type="int" Nullable="false" />
+          <Property Name="TotalBackOrders" Type="int" Nullable="false" />
+          <Property Name="InTransitStock" Type="int" Nullable="false" />
+          <Property Name="ReservedStock" Type="int" Nullable="false" />
+          <Property Name="ReplacedItemCode" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="InheritStock" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="ReplacementMultiplier" Type="int" Nullable="false" />
+          <Property Name="BulkOrderQuantity1" Type="int" Nullable="false" />
+          <Property Name="BulkOrderQuantity2" Type="int" Nullable="false" />
+          <Property Name="twr_gidnumer" Type="int" Nullable="false" />
+          <Property Name="MAG_GIDNumer" Type="int" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="Siden_Transactional_Demand" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="CDN">
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="RowTransactionType" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="ItemCode" Type="varchar" MaxLength="40" />
+          <Property Name="WarehouseCode" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="WarehouseGroupCode" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="SalesOrderNumber" Type="varchar" MaxLength="1024" />
+          <Property Name="SalesOrderLineNumber" Type="smallint" Nullable="false" />
+          <Property Name="ExtractionDate" Type="datetime" Nullable="false" />
+          <Property Name="OrderedRequestedQuantity" Type="decimal" Precision="11" Scale="4" />
+          <Property Name="DeliveredSuppliedQuantity" Type="decimal" Precision="38" Scale="4" />
+          <Property Name="DemandDate" Type="datetime" />
+          <Property Name="CustomerCode" Type="varchar" MaxLength="50" />
+          <Property Name="UseForForecasting" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="UseForServiceLevel" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="UseForClassification" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="StockAtDemandDate" Type="int" Nullable="false" />
+          <Property Name="FreeText1" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="FreeText2" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="FreeText3" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="FreeText4" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="FreeText5" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="ZaN_LastMod" Type="datetime" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <EntityContainer Name="CDNXL_MTLModelStoreContainer" />
+</Schema>

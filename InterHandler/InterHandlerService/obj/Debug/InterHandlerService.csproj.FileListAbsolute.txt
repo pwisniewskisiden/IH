@@ -1,0 +1,15 @@
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\InterHandlerService.exe.config
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\InterHandlerService.exe
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\InterHandlerService.pdb
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\Common.Logging.Core.dll
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\Common.Logging.dll
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\Quartz.dll
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\Common.Logging.pdb
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\Common.Logging.xml
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\Common.Logging.Core.pdb
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\Common.Logging.Core.xml
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\Quartz.pdb
+C:\Projects\InterHandler\InterHandler\InterHandlerService\bin\Debug\Quartz.xml
+C:\Projects\InterHandler\InterHandler\InterHandlerService\obj\Debug\InterHandlerService.exe
+C:\Projects\InterHandler\InterHandler\InterHandlerService\obj\Debug\InterHandlerService.pdb
+C:\Projects\InterHandler\InterHandler\InterHandlerService\obj\Debug\InterHandlerService.csprojResolveAssemblyReference.cache

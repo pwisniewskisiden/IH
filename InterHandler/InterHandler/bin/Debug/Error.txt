@@ -1,0 +1,81 @@
+ArxOne.Ftp.Exceptions.FtpAuthenticationException: Authentication failed for user siden-syncron
+   w ArxOne.Ftp.FtpSession.InitializeConnection()
+   w ArxOne.Ftp.FtpSession.ProcessConnect(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.<>c__DisplayClass15_0.<Connect>b__0()
+   w ArxOne.Ftp.FtpSession.Process[TResult](Func`1 func, String commandDescription, String requestCommand, String[] requestParameters)
+   w ArxOne.Ftp.FtpSession.Connect(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.get_ProtocolStream()
+   w ArxOne.Ftp.FtpSession.SetTransferMode(FtpTransferMode value)
+   w ArxOne.Ftp.FtpSession.OpenDataStream(Boolean passive, TimeSpan connectTimeout, TimeSpan readWriteTimeout, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.OpenDataStream(FtpSession session, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.ProcessList(FtpSession session, FtpPath path)
+   w ArxOne.Ftp.FtpClientUtility.<>c__DisplayClass1_0.<List>b__0(FtpSession handle)
+   w ArxOne.Ftp.FtpClient.Process[TResult](Func`2 action, FtpSession session)
+   w ArxOne.Ftp.FtpClientUtility.List(FtpClient ftpClient, FtpPath path)
+   w ArxOne.Ftp.FtpClientUtility.ListEntries(FtpClient ftpClient, FtpPath path)
+   w DAL.FTP.FTP.Recive(String fromServPath, String toLocalPath, String fileEnding) w C:\Projects\InterHandler\InterHandler\DAL\FTP\FTP.cs:wiersz 28
+   w BusinessLogic.Jobs.OrderExportJob.Execute(IJobExecutionContext context) w C:\Projects\InterHandler\InterHandler\InterHandler\Jobs\OrderExportJob.cs:wiersz 34
+ArxOne.Ftp.Exceptions.FtpAuthenticationException: Authentication failed for user siden-syncron
+   w ArxOne.Ftp.FtpSession.InitializeConnection()
+   w ArxOne.Ftp.FtpSession.ProcessConnect(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.<>c__DisplayClass15_0.<Connect>b__0()
+   w ArxOne.Ftp.FtpSession.Process[TResult](Func`1 func, String commandDescription, String requestCommand, String[] requestParameters)
+   w ArxOne.Ftp.FtpSession.Connect(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.get_ProtocolStream()
+   w ArxOne.Ftp.FtpSession.SetTransferMode(FtpTransferMode value)
+   w ArxOne.Ftp.FtpSession.OpenDataStream(Boolean passive, TimeSpan connectTimeout, TimeSpan readWriteTimeout, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.OpenDataStream(FtpSession session, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.ProcessStor(FtpSession session, FtpPath path, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.<>c__DisplayClass9_0.<Stor>b__0(FtpSession handle)
+   w ArxOne.Ftp.FtpClient.Process[TResult](Func`2 action, FtpSession session)
+   w ArxOne.Ftp.FtpClientUtility.Stor(FtpClient ftpClient, FtpPath path, FtpTransferMode mode)
+   w DAL.FTP.FTP.Send(String inLocal, String outFTP, String regex) w C:\Projects\InterHandler\InterHandler\DAL\FTP\FTP.cs:wiersz 84
+   w InterHandler.Jobs.SendingJob.Execute[StringModel,DBModel](IJobExecutionContext context) w C:\Projects\InterHandler\InterHandler\InterHandler\Jobs\SendingJob.cs:wiersz 105
+ArxOne.Ftp.Exceptions.FtpAuthenticationException: Authentication failed for user siden-syncron
+   w ArxOne.Ftp.FtpSession.InitializeConnection()
+   w ArxOne.Ftp.FtpSession.ProcessConnect(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.<>c__DisplayClass15_0.<Connect>b__0()
+   w ArxOne.Ftp.FtpSession.Process[TResult](Func`1 func, String commandDescription, String requestCommand, String[] requestParameters)
+   w ArxOne.Ftp.FtpSession.Connect(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.get_ProtocolStream()
+   w ArxOne.Ftp.FtpSession.SetTransferMode(FtpTransferMode value)
+   w ArxOne.Ftp.FtpSession.OpenDataStream(Boolean passive, TimeSpan connectTimeout, TimeSpan readWriteTimeout, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.OpenDataStream(FtpSession session, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.ProcessStor(FtpSession session, FtpPath path, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.<>c__DisplayClass9_0.<Stor>b__0(FtpSession handle)
+   w ArxOne.Ftp.FtpClient.Process[TResult](Func`2 action, FtpSession session)
+   w ArxOne.Ftp.FtpClientUtility.Stor(FtpClient ftpClient, FtpPath path, FtpTransferMode mode)
+   w DAL.FTP.FTP.Send(String inLocal, String outFTP, String regex) w C:\Projects\InterHandler\InterHandler\DAL\FTP\FTP.cs:wiersz 84
+   w InterHandler.Jobs.SendingJob.Execute[StringModel,DBModel](IJobExecutionContext context) w C:\Projects\InterHandler\InterHandler\InterHandler\Jobs\SendingJob.cs:wiersz 105
+ArxOne.Ftp.Exceptions.FtpAuthenticationException: Authentication failed for user siden-syncron
+   w ArxOne.Ftp.FtpSession.InitializeConnection()
+   w ArxOne.Ftp.FtpSession.ProcessConnect(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.<>c__DisplayClass15_0.<Connect>b__0()
+   w ArxOne.Ftp.FtpSession.Process[TResult](Func`1 func, String commandDescription, String requestCommand, String[] requestParameters)
+   w ArxOne.Ftp.FtpSession.Connect(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.get_ProtocolStream()
+   w ArxOne.Ftp.FtpSession.SetTransferMode(FtpTransferMode value)
+   w ArxOne.Ftp.FtpSession.OpenDataStream(Boolean passive, TimeSpan connectTimeout, TimeSpan readWriteTimeout, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.OpenDataStream(FtpSession session, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.ProcessStor(FtpSession session, FtpPath path, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.<>c__DisplayClass9_0.<Stor>b__0(FtpSession handle)
+   w ArxOne.Ftp.FtpClient.Process[TResult](Func`2 action, FtpSession session)
+   w ArxOne.Ftp.FtpClientUtility.Stor(FtpClient ftpClient, FtpPath path, FtpTransferMode mode)
+   w DAL.FTP.FTP.Send(String inLocal, String outFTP, String regex) w C:\Projects\InterHandler\InterHandler\DAL\FTP\FTP.cs:wiersz 84
+   w InterHandler.Jobs.SendingJob.Execute[StringModel,DBModel](IJobExecutionContext context) w C:\Projects\InterHandler\InterHandler\InterHandler\Jobs\SendingJob.cs:wiersz 105
+ArxOne.Ftp.Exceptions.FtpAuthenticationException: Authentication failed for user siden-syncron
+   w ArxOne.Ftp.FtpSession.InitializeConnection()
+   w ArxOne.Ftp.FtpSession.ProcessConnect(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.<>c__DisplayClass15_0.<Connect>b__0()
+   w ArxOne.Ftp.FtpSession.Process[TResult](Func`1 func, String commandDescription, String requestCommand, String[] requestParameters)
+   w ArxOne.Ftp.FtpSession.Connect(TimeSpan connectTimeout, TimeSpan readWriteTimeout)
+   w ArxOne.Ftp.FtpSession.get_ProtocolStream()
+   w ArxOne.Ftp.FtpSession.SetTransferMode(FtpTransferMode value)
+   w ArxOne.Ftp.FtpSession.OpenDataStream(Boolean passive, TimeSpan connectTimeout, TimeSpan readWriteTimeout, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.OpenDataStream(FtpSession session, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.ProcessStor(FtpSession session, FtpPath path, FtpTransferMode mode)
+   w ArxOne.Ftp.FtpClientUtility.<>c__DisplayClass9_0.<Stor>b__0(FtpSession handle)
+   w ArxOne.Ftp.FtpClient.Process[TResult](Func`2 action, FtpSession session)
+   w ArxOne.Ftp.FtpClientUtility.Stor(FtpClient ftpClient, FtpPath path, FtpTransferMode mode)
+   w DAL.FTP.FTP.Send(String inLocal, String outFTP, String regex) w C:\Projects\InterHandler\InterHandler\DAL\FTP\FTP.cs:wiersz 84
+   w InterHandler.Jobs.SendingJob.Execute[StringModel,DBModel](IJobExecutionContext context) w C:\Projects\InterHandler\InterHandler\InterHandler\Jobs\SendingJob.cs:wiersz 105
