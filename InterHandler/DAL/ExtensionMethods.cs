@@ -18,13 +18,13 @@ namespace DAL
 
         public static string DateToString(this DateTime? value)
         {
-            if (value != null) return((DateTime)value).ToString("yyyy-MM-dd");
+            if (value != null) return((DateTime)value).ToString("yyyyMMdd");
             return string.Empty;
         }
 
         public static string DateTimeToString(this DateTime? value)
         {
-            if (value != null) return ((DateTime)value).ToString("yyyy-MM-ddTHH\\:mm");
+            if (value != null) return ((DateTime)value).ToString("yyyyMMddTHHmm");
             return string.Empty;
         }
 

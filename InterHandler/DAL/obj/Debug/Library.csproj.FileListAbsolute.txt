@@ -12,3 +12,17 @@ C:\Projects\InterHandler\InterHandler\DAL\bin\Debug\EntityFramework.SqlServer.xm
 C:\Projects\InterHandler\InterHandler\DAL\obj\Debug\DAL.dll
 C:\Projects\InterHandler\InterHandler\DAL\obj\Debug\DAL.pdb
 C:\Projects\InterHandler\InterHandler\DAL\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\DAL.dll.config
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\DAL.dll
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\DAL.pdb
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\ArxOne.Ftp.dll
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\AutoMapper.dll
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\EntityFramework.dll
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\ArxOne.Ftp.xml
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\AutoMapper.xml
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\EntityFramework.xml
+C:\repos\IH\InterHandler\InterHandler\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\repos\IH\InterHandler\InterHandler\DAL\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\repos\IH\InterHandler\InterHandler\DAL\obj\Debug\DAL.dll
+C:\repos\IH\InterHandler\InterHandler\DAL\obj\Debug\DAL.pdb

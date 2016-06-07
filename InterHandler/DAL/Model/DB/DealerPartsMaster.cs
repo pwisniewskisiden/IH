@@ -83,9 +83,22 @@ namespace DAL.Model
             stringModel.PurchasePrice = PurchasePrice.DecimalToString(2); 
 
             stringModel.InheritStock = InheritStock.CutDownTo(1);
-            stringModel.ReplacementMultiplier = ReplacementMultiplier.DecimalToString(2); 
-       
-            Mapper.CreateMap<StringDealerPartsMaster, StringModel>();
+            stringModel.ReplacementMultiplier = ReplacementMultiplier.DecimalToString(2);
+
+            if (Weight == 0) stringModel.Weight = String.Empty;
+            //if (UnitCost == 0) stringModel.UnitCost = String.Empty;
+
+            if (UnitCost == null) stringModel.UnitCostCurrency = String.Empty;
+
+            if (Volume == 0) stringModel.Volume = String.Empty;
+
+            if (BulkOrderQuantity1 == 0) stringModel.BulkOrderQuantity1 = String.Empty;
+
+            if (BulkOrderQuantity2 == 0) stringModel.BulkOrderQuantity2 = String.Empty;
+
+            if (MultipleOrderQty == 0) stringModel.MultipleOrderQty = "1";//String.Empty;
+
+             Mapper.CreateMap<StringDealerPartsMaster, StringModel>();
             var stringModelRet = Mapper.Map<StringDealerPartsMaster, StringModel>(stringModel);
 
 
